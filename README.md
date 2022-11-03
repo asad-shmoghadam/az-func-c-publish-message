@@ -12,7 +12,7 @@ Function C is an Azure function that create messages from CSV and publish them t
 6. Add Azure Service Bus connection string to function configuration with the name of `SERVICE_BUS_CONNECTION`
 7. Add the name of the queue that you already created (`example_queue`) to function configuration with the name of `QUEUE_NAME`
 8. Create Azure Storage Account
-9. Create a container called `sensorsdata`
+9. Create a container called `sensorsdata` (Find out more in [Function B - ETL](https://github.com/asad-shmoghadam/az-func-b-etl))
 10. Add Azure Storage Account connection string for the atachments container to function configuration with the name of `ccpsattachmentsstorage`
 
 > The function will be triggered if the CSV file added to this path `"path": "sensorsdata/{name}.csv"`
